@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Statistics.Core.Entities
-{
+{ // class that connects worlds
     public class BankToUsersEntity :BaseEntity
     {
         [ForeignKey(nameof(UserId))]

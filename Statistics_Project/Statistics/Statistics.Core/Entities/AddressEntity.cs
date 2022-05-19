@@ -13,9 +13,9 @@ namespace Statistics.Core.Entities
         public string Country { get; set; }
         public string City { get; set; }
         public string Street { get; set; }
-        public Guid UserId { get; set; }
+        public string? UserId { get; set; }
         //[ForeignKey("UserId")]
         [ForeignKey(nameof(UserId))]
-        public UsersEntity User { get; set; }
+        public UsersEntity? User { get; set; }
     }
 }

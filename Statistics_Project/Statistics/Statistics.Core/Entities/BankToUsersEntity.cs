@@ -10,8 +10,8 @@ namespace Statistics.Core.Entities
     public class BankToUsersEntity :BaseEntity
     {
         [ForeignKey(nameof(UserId))]
-        public UsersEntity User { get; set; }
-        public Guid UserId { get; set; }
+        public UsersEntity? User { get; set; }
+        public string? UserId { get; set; }
 
         [ForeignKey(nameof(BankAccountId))]
         public BankAccountsEntity BankAccount { get; set; }
